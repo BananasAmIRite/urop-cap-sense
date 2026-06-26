@@ -3,7 +3,7 @@
 
 
 void setup() {
-  Serial.begin(2000000); 
+  Serial.begin(256000); 
   // put your setup code here, to run once:
 // OC2B is hardwired to Digital Pin 3 on the Arduino UNO
   pinMode(3, OUTPUT);     
@@ -13,27 +13,27 @@ void setup() {
 
 
   // // Clear current timer configurations
-  TCCR2A = 0;
-  TCCR2B = 0;
+  // TCCR2A = 0;
+  // TCCR2B = 0;
 
-  // Set Fast PWM Mode 7 (WGM22=1, WGM21=1, WGM20=1)
-  // Non-inverting PWM on Pin 3 (COM2B1=1)
-  TCCR2A = _BV(COM2B1) | _BV(WGM21) | _BV(WGM20);
+  // // Set Fast PWM Mode 7 (WGM22=1, WGM21=1, WGM20=1)
+  // // Non-inverting PWM on Pin 3 (COM2B1=1)
+  // TCCR2A = _BV(COM2B1) | _BV(WGM21) | _BV(WGM20);
   
-  // Set prescaler to 128 (CS22=1, CS21=0, CS20=1) and WGM22=1
-  TCCR2B = _BV(WGM22) | _BV(CS22) | _BV(CS20);
+  // // Set prescaler to 128 (CS22=1, CS21=0, CS20=1) and WGM22=1
+  // TCCR2B = _BV(WGM22) | _BV(CS22) | _BV(CS20);
 
-  // Set TOP value for ~801.28 Hz
-  OCR2A = 155; 
+  // // Set TOP value for ~801.28 Hz
+  // OCR2A = 155; 
 
-  // Set Compare Match for exactly 75% duty cycle
-  OCR2B = 116;
+  // // Set Compare Match for exactly 75% duty cycle
+  // OCR2B = 116;
 
-  // //Set frequency to 4MHz, 25% duty cycle
-  // TCCR2A = _BV(COM2A0) | _BV(COM2B1) | _BV(WGM21) | _BV(WGM20);
-  // TCCR2B = _BV(WGM22) | _BV(CS20);
-  // OCR2A = 3;
-  // OCR2B = 0;
+  //Set frequency to 4MHz, 25% duty cycle
+  TCCR2A = _BV(COM2A0) | _BV(COM2B1) | _BV(WGM21) | _BV(WGM20);
+  TCCR2B = _BV(WGM22) | _BV(CS20);
+  OCR2A = 3;
+  OCR2B = 0;
 
   // analogReference(INTERNAL);         //change reference to 1.1V
 
@@ -97,7 +97,8 @@ void loop() {
 
   // Read the raw, noisy voltage
   int raw = analogRead(A4); 
-  // int raw2 = analogRead(A5); 
+  analogRead(A4); 
+  int raw2 = analogRead(A5); 
   
   // // Pass it through our filter
   // int avg = getSmoothedValue(raw); 
@@ -133,7 +134,13 @@ void loop() {
 
     // --- 2. ACTUAL DATA ---
     // Serial.print("R:");
-    Serial.println(raw);
+    float t = micros()/1000000.0;
+    Serial.print(t, 6);
+    Serial.print(",");
+    Serial.print(raw);
+      Serial.print(",");
+    Serial.println(raw2);
+
     // Serial.print(",");
     // Serial.print(raw2);
     // Serial.print(",");

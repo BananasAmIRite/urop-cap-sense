@@ -1,12 +1,12 @@
-#define SEND_PIN 4
-#define RECV_PIN 5
+#define SEND_PIN 5
+#define RECV_PIN 4
 
 void setup() {
   // put your setup code here, to run once:
-  while (!Serial); 
+  // while (!Serial); 
 
   Serial.begin(115200);
-  Serial.println("Capacitive Sensing");  
+  Serial.println("Resistive Sensing");  
 
   pinMode(SEND_PIN, OUTPUT); 
   pinMode(RECV_PIN, INPUT); 
@@ -15,13 +15,20 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-  unsigned long time = measureTimeToRiseSampled(30); 
+  digitalWrite(SEND_PIN, HIGH); 
 
-  Serial.println(time); 
+  Serial.print("0,");
+  Serial.print("4095,");
+  Serial.println(analogRead(RECV_PIN)); 
+
+
+  // unsigned long time = measureTimeToRiseSampled(30); 
+
+  // Serial.println(time); 
 
 
 
-  delay(10); 
+  // delay(10); 
 
 }
 
