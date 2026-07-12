@@ -190,7 +190,7 @@
 			(pin output line
 				(at -7.62 1.27 0)
 				(length 2.54)
-				(name "G_OUT"
+				(name "VDD_OUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -208,7 +208,7 @@
 			(pin output line
 				(at -7.62 -1.27 0)
 				(length 2.54)
-				(name "B_OUT"
+				(name "G_OUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -226,7 +226,7 @@
 			(pin output line
 				(at -7.62 -3.81 0)
 				(length 2.54)
-				(name "VDD_OUT"
+				(name "B_OUT"
 					(effects
 						(font
 							(size 1.27 1.27)

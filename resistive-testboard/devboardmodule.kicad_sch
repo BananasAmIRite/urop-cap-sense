@@ -99,7 +99,7 @@
 				(pin output line
 					(at -7.62 1.27 0)
 					(length 2.54)
-					(name "G_OUT"
+					(name "VDD_OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -117,7 +117,7 @@
 				(pin output line
 					(at -7.62 -1.27 0)
 					(length 2.54)
-					(name "B_OUT"
+					(name "G_OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -135,7 +135,7 @@
 				(pin output line
 					(at -7.62 -3.81 0)
 					(length 2.54)
-					(name "VDD_OUT"
+					(name "B_OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -206,23 +206,13 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 107.95) (xy 113.03 107.95)
+			(xy 101.6 113.03) (xy 101.6 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3b091f65-5655-4f55-af8f-85ae071adefb")
-	)
-	(wire
-		(pts
-			(xy 101.6 110.49) (xy 101.6 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "464e522a-620c-4e11-951c-9ed2b668109f")
+		(uuid "4af409b1-7374-47fe-a076-cb51f0450dc0")
 	)
 	(wire
 		(pts
@@ -246,6 +236,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 110.49) (xy 106.68 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cebda07-54ea-4075-adbb-64efb37f376c")
+	)
+	(wire
+		(pts
 			(xy 104.14 105.41) (xy 99.06 105.41)
 		)
 		(stroke
@@ -256,6 +256,26 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 110.49) (xy 106.68 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a91c57c5-c134-481e-9957-65f27b47f2c2")
+	)
+	(wire
+		(pts
+			(xy 106.68 107.95) (xy 113.03 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2cd1f9d-42de-4362-8baf-55be9e66979d")
+	)
+	(wire
+		(pts
 			(xy 109.22 111.76) (xy 113.03 111.76)
 		)
 		(stroke
@@ -263,16 +283,6 @@
 			(type default)
 		)
 		(uuid "d76c5a1f-daf4-41e7-a3b6-cd1301f68524")
-	)
-	(wire
-		(pts
-			(xy 101.6 110.49) (xy 99.06 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb8ba5a8-183c-42a0-a644-be397019f39e")
 	)
 	(wire
 		(pts
@@ -293,6 +303,16 @@
 			(type default)
 		)
 		(uuid "f240d0d3-2c7f-4e9f-960f-10b6aaecf57b")
+	)
+	(wire
+		(pts
+			(xy 99.06 113.03) (xy 101.6 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe6c6064-9ada-4e71-8898-fed43c9cda6b")
 	)
 	(hierarchical_label "ADC"
 		(shape output)
@@ -371,7 +391,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "46f43b1b-fce9-4762-8698-edfb91e0865e")
 		(property "Reference" "U1"
 			(at 82.55 108.5849 0)
