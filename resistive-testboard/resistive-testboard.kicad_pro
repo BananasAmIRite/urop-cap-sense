@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [],
@@ -632,7 +632,7 @@
         "uuid": "b6337c40-778a-4b78-8bd5-97a280cd68b7"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR1-15,U1-4,E1-24,R1-25,J1,Q1-12",
     "variants": []
   },
   "sheets": [
@@ -649,16 +649,48 @@
       "S1"
     ],
     [
+      "57e32e0e-71b4-49e4-ab2a-1fc1c9034e9c",
+      "S2"
+    ],
+    [
       "75b6e842-7b48-4a41-b695-8094663dd57d",
       "S3"
+    ],
+    [
+      "d0a28d9b-341d-492d-9e4b-fa40a72d2462",
+      "M1"
+    ],
+    [
+      "6912dafb-421e-4b5a-8f81-2e365ecd89b6",
+      "S1"
     ],
     [
       "57e32e0e-71b4-49e4-ab2a-1fc1c9034e9c",
       "S2"
     ],
     [
-      "d0a28d9b-341d-492d-9e4b-fa40a72d2462",
-      "M1"
+      "75b6e842-7b48-4a41-b695-8094663dd57d",
+      "S3"
+    ],
+    [
+      "b2b085fe-6cf1-4bf1-8ff8-9b3940cf2c0c",
+      "M3"
+    ],
+    [
+      "57e32e0e-71b4-49e4-ab2a-1fc1c9034e9c",
+      "S2"
+    ],
+    [
+      "75b6e842-7b48-4a41-b695-8094663dd57d",
+      "S3"
+    ],
+    [
+      "6912dafb-421e-4b5a-8f81-2e365ecd89b6",
+      "S1"
+    ],
+    [
+      "cc222968-bb4b-49a4-8d4c-9649111a8d47",
+      "M4"
     ],
     [
       "57e32e0e-71b4-49e4-ab2a-1fc1c9034e9c",

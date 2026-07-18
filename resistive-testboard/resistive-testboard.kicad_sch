@@ -665,6 +665,26 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 99.06) (xy 130.81 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c161194-720c-4f16-9512-7ea13b589877")
+	)
+	(wire
+		(pts
+			(xy 116.84 99.06) (xy 114.3 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f063f5b-15f2-41c9-9504-039d9a8f73f3")
+	)
+	(wire
+		(pts
 			(xy 97.79 99.06) (xy 97.79 95.25)
 		)
 		(stroke
@@ -672,6 +692,16 @@
 			(type default)
 		)
 		(uuid "1ecce490-c1f3-456a-9b0a-1a79e9a75293")
+	)
+	(wire
+		(pts
+			(xy 135.89 85.09) (xy 135.89 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "216fbe0a-1c7e-4e9a-a319-b6fd1318332d")
 	)
 	(wire
 		(pts
@@ -715,6 +745,26 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 85.09) (xy 119.38 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8681e383-05b9-4c42-9b23-f930399d0587")
+	)
+	(wire
+		(pts
+			(xy 114.3 99.06) (xy 114.3 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba85e704-071f-4b61-9518-046e994615dc")
+	)
+	(wire
+		(pts
 			(xy 83.82 99.06) (xy 81.28 99.06)
 		)
 		(stroke
@@ -745,6 +795,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 99.06) (xy 130.81 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2a33093-a23d-4492-b8b1-b118577896af")
+	)
+	(wire
+		(pts
 			(xy 59.69 77.47) (xy 71.12 77.47)
 		)
 		(stroke
@@ -763,6 +823,16 @@
 		)
 		(uuid "ff36e584-3d09-4431-9639-d7ffd8ee239c")
 	)
+	(label "RX"
+		(at 133.35 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0a9f3c5a-93c5-4bc3-af70-71279575c3ca")
+	)
 	(label "V_SIG"
 		(at 102.87 85.09 0)
 		(effects
@@ -774,6 +844,16 @@
 		(uuid "16e2dd88-51b9-4f15-90d3-31281350076b")
 	)
 	(label "V_SIG"
+		(at 135.89 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "24139947-4dc1-4a29-814c-8ecb65f8bb43")
+	)
+	(label "V_SIG"
 		(at 63.5 74.93 0)
 		(effects
 			(font
@@ -782,6 +862,26 @@
 			(justify left bottom)
 		)
 		(uuid "3ccd68dd-6784-444e-ab7c-a8d221d8448f")
+	)
+	(label "RX"
+		(at 64.77 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "535b06f8-7ca1-4429-968a-6e2bfc883a78")
+	)
+	(label "V_SIG"
+		(at 119.38 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "85afab07-73cf-4cc2-ae44-fe2a11ac5fbd")
 	)
 	(label "V_SIG"
 		(at 86.36 85.09 0)
@@ -792,16 +892,6 @@
 			(justify left bottom)
 		)
 		(uuid "99c82952-946d-46d3-acce-28c17b586229")
-	)
-	(label "RX"
-		(at 63.5 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a0ea421f-3bd1-4757-b6e9-20a8719c00f3")
 	)
 	(label "RX"
 		(at 54.61 95.25 180)
@@ -822,6 +912,16 @@
 			(justify right bottom)
 		)
 		(uuid "ad605dea-31f4-4bf6-99f5-e2e27d73902b")
+	)
+	(label "RX"
+		(at 116.84 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e74fcc15-c2f6-4ac1-81a2-4063ea6634df")
 	)
 	(label "RX"
 		(at 100.33 99.06 180)
@@ -906,6 +1006,83 @@
 			(project "resistive-testboard"
 				(path "/b6337c40-778a-4b78-8bd5-97a280cd68b7"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 71.12 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "76b2c95d-affd-427b-b727-a5529fa64a9b")
+		(property "Reference" "#PWR02"
+			(at 71.12 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 71.12 73.406 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 71.12 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b74630d-73a7-4b80-babe-295204a7ab2b")
+		)
+		(instances
+			(project "resistive-testboard"
+				(path "/b6337c40-778a-4b78-8bd5-97a280cd68b7"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -998,84 +1175,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 71.12 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c07807cf-1f63-400f-ad74-9f4f01c25256")
-		(property "Reference" "#PWR03"
-			(at 71.12 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 71.12 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f33a1903-bfbb-4e48-8cc0-38bf2041d812")
-		)
-		(instances
-			(project "resistive-testboard"
-				(path "/b6337c40-778a-4b78-8bd5-97a280cd68b7"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 54.61 99.06 0)
 		(unit 1)
@@ -1158,8 +1257,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 64.77 80.01 0)
+		(lib_id "power:GND")
+		(at 63.5 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1167,9 +1266,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "fa81bee2-d2a1-4159-969d-d177a969100e")
-		(property "Reference" "#PWR02"
-			(at 64.77 83.82 0)
+		(fields_autoplaced yes)
+		(uuid "e795259b-9837-40aa-9401-d5bf97875349")
+		(property "Reference" "#PWR03"
+			(at 63.5 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1179,8 +1279,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 64.77 75.946 0)
+		(property "Value" "GND"
+			(at 63.5 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1190,7 +1290,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 80.01 0)
+			(at 63.5 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1201,7 +1301,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 80.01 0)
+			(at 63.5 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1211,8 +1311,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 64.77 80.01 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1223,12 +1323,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "449dc588-38a3-4677-991b-3133581a8880")
+			(uuid "6b46158c-fc4b-4a2a-8b28-b2be6464a949")
 		)
 		(instances
 			(project "resistive-testboard"
 				(path "/b6337c40-778a-4b78-8bd5-97a280cd68b7"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1297,6 +1397,140 @@
 			(project "resistive-testboard"
 				(path "/b6337c40-778a-4b78-8bd5-97a280cd68b7"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 87.63)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b2b085fe-6cf1-4bf1-8ff8-9b3940cf2c0c")
+		(property "Sheetname" "M3"
+			(at 111.76 86.9184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DevBoardModule.kicad_sch"
+			(at 111.76 95.8346 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ADC" output
+			(at 114.3 95.25 270)
+			(uuid "86db1220-ae6a-43dd-b134-7ddb6af9612f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VCC" input
+			(at 119.38 87.63 90)
+			(uuid "ac326e66-9fc6-4a29-a4c3-939857e843d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "resistive-testboard"
+				(path "/b6337c40-778a-4b78-8bd5-97a280cd68b7"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 87.63)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cc222968-bb4b-49a4-8d4c-9649111a8d47")
+		(property "Sheetname" "M4"
+			(at 128.27 86.9184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DevBoardModule.kicad_sch"
+			(at 128.27 95.8346 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ADC" output
+			(at 130.81 95.25 270)
+			(uuid "735c241c-33c0-4578-8d08-cb8bdbc6c0f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VCC" input
+			(at 135.89 87.63 90)
+			(uuid "76cc392d-31d7-4575-8e7a-25c74ecc3aeb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "resistive-testboard"
+				(path "/b6337c40-778a-4b78-8bd5-97a280cd68b7"
+					(page "14")
 				)
 			)
 		)
